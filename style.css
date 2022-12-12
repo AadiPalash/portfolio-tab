@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .hero .container_fluid{
+  background-image: url("content-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: scroll;
+  height: 80vh;
+}
+.hero .container_fluid .overlay{
+  background-color: rgba(255, 255, 255, 0.062);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.hero .container_fluid .overlay .content_box{
+  flex-basis: 55%;
+  align-items: center;
+}
+.hero .container_fluid .overlay .content_box h2{
+  text-align: center;
+  color: #000;
+  font-family: "Goldenbook";
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.hero .container_fluid .overlay .content_box .details_box{
+  background-color: #fff;
+  padding: 40px 80px;
+  border-radius: 5px;
+}
+.hero .container_fluid .overlay .content_box .details_box p{
+  color: #5f6979;
+  font-family: "Goldenbook";
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* gallery */
+.gallery {
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  margin: 40px auto;
+}
+.gallery .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.gallery .container .portfolio_title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.gallery .container .portfolio_title h1 {
+  color: #5f6979;
+  font-family: "goldenbook";
+  font-size: 32px;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 1.65;
+}
+.gallery ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  flex-direction: row;
+}
+.gallery ul li {
+  list-style: none;
+  flex-basis: 25%;
+}
+.gallery ul li h3 {
+  font-weight: 400;
+  cursor: pointer;
+  color: #444e5acb;
+  font-family: "goldenbook";
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 1.65;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0.1px solid rgba(189, 182, 182, 0);
+}
+.gallery ul li.active h3 {
+  background-color: #e4e4e42c;
+  border-radius: 5px;
+  transition: all 0.3s;
+  border: 0.1px solid rgba(189, 182, 182, 0.137);
+}
+.product {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.product .itemBox {
+  flex-basis: 25%;
+  position: relative;
+  height:400px;
+}
+.product .itemBox.hide {
+  display: none;
+}
+.product .itemBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 15px;
+  
+}
+.product .active:after {
+  /* content: " "; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query Responsive Part */
+
+
+
+
+
+
+
+@media (max-width:1920px){
+  .gallery .container {
+    max-width: 1650px;
+  }
+ 
+
+@media (max-width:1440px){
+    .gallery .container {
+      max-width: 1350px;
+    }
+  }
+
+@media (max-width:1024px){
+    .product .itemBox {
+      flex-basis: 33.33%;
+    }
+    .product .itemBox img {
+      padding: 10px;
+    }
+    .gallery ul {
+      padding: 0px;
+    }
+    .gallery .container .portfolio_title {
+      margin: 0;
+      padding: 10px 0;
+    }
+    .gallery .container .portfolio_title h1 {
+      font-weight: 400;
+    }
+    .gallery .container {
+      padding: 0 20px;
+    }
+
+  
+  }
+@media (max-width:768px) {
+    .product .itemBox {
+      flex-basis: 33.33%;
+      height: 350px;
+    }
+    .product .itemBox img {
+      padding: 10px;
+    }
+    .gallery .container {
+      padding: 0 20px;
+    }
+    .gallery .container .portfolio_title {
+      margin: 0;
+      padding: 10px 0;
+    }
+    .gallery .container .portfolio_title h1 {
+      font-size: 30px;
+      font-weight: 400;
+    }
+  
+    .gallery ul li h3 {
+      font-size: 11px;
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 10px 0;
+    }
+    .gallery ul {
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+@media (max-width:425px) {
+  .gallery .container .portfolio_title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .gallery .container .portfolio_title h1 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .gallery ul li {
+    flex-basis: 50%;
+  }
+  
+
+
+  .gallery ul li h3 {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .product .itemBox {
+    flex-basis: 50% !important;
+    height: 300px !important;
+  }
+  .product .itemBox img {
+    padding: 10px;
+  }
+
+}
+/* Media Query Responsive Part */
